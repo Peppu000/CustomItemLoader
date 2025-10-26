@@ -189,6 +189,7 @@ final class CustomItemProperties{
 				default => throw new InvalidArgumentException("Unknown armor slot {$data["armor_slot"]} given.")
 			};
 			$this->addComponent(new ArmorComponent($data["armor_class"], $armor_slot_int, $this->getDefencePoints()));
+			$this->armorSlot = $armor_slot_int;
 			$this->armor = true;
 		}
 		if(isset($data["foil"])){
