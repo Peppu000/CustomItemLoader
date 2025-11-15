@@ -55,6 +55,9 @@ final class CustomItemManager{
 	public function __construct(){
 	}
 
+	/**
+	 * @return Item[]
+	 */
 	public function getItems() : array{
 		return $this->registered;
 	}
@@ -93,6 +96,9 @@ final class CustomItemManager{
 		}
 	}
 
+	/**
+	 * @return ItemTypeEntry[]
+	 */
 	public function getEntries() : array{
 		return $this->itemTypeEntries;
 	}
